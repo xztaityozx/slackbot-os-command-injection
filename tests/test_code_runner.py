@@ -60,10 +60,10 @@ class TestBrainfuckRunner(unittest.TestCase):
 class TestCsharpShellRunner(unittest.TestCase):
     def setUp(self):
         self.code_runner = CodeRunner('odanado/os-command-injection')
-        self.config = yaml.load(open('./langs/csharp-shell/config.yml'))
-        self.source_code="""
+        self.source_code = """
 Console.WriteLine("Hello, world!");
         """
+        self.config = yaml.load(open('./langs/csharp-shell/config.yml'))
 
     def test_run(self):
         stdout, _, _ = \
