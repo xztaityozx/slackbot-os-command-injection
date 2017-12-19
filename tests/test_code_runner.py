@@ -62,7 +62,7 @@ class TestCsharpShellRunner(unittest.TestCase):
         self.code_runner = CodeRunner('odanado/os-command-injection')
         self.config = yaml.load(open('./langs/csharp-shell/config.yml'))
         self.source_code="""
-Console.WriteLine("Hello World!");
+Console.WriteLine("Hello, world!");
         """
 
     def test_run(self):
