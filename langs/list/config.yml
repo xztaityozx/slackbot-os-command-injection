@@ -1,0 +1,4 @@
+docker_tag: list
+filename: Main.sh
+compile_cmd: ls langs -1|grep -vw list|xargs -I@ echo "cat langs/@/config.yml"|bash|grep -vw "^filename:\|^compile_cmd\|^run_cmd"|sed 's/^docker_tag/language/g' > a.out
+run_cmd: bash -c "cat ./a.out"

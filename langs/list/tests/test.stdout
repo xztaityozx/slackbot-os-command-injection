@@ -1,0 +1,22 @@
+language: bash
+language: brainfuck
+aliases:
+    - bf
+language: c
+aliases:
+    - gcc
+    - cc
+language: csharp-shell
+aliases:
+    - cssh
+language: haskell
+aliases:
+    - runghc
+    - hs
+language: python2
+language: python3
+aliases:
+    - python
+language: scala
+aliases:
+    - scala

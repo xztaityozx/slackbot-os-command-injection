@@ -47,3 +47,7 @@ services:
     haskell:
         image: odanado/os-command-injection:haskell
         build: langs/haskell
+
+    list:
+        image: odanado/os-command-injection:list
+        build: langs/list
